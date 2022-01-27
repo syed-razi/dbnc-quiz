@@ -1,16 +1,11 @@
-if (recipe == 'SPANISH') {
-  fudge = SPANISH_FUDGE;
+if (recipe == "SPANISH") {
   amt = base * SPANISH_FUDGE;
-  sugar = 2 * bottom(amt) + top(amt) * 1.17;
-} else if ((recipe == 'FRENCH') || (recipe == 'ENGLISH')) {
-  fudge = (recipe == 'FRENCH') ? FRENCH_FUDGE : ENGLISH_FUDGE;
-  amt = base * fudge;
-  sugar = 2 * bottom(amt) + top(amt) * 1.17;
-  if (recipe == 'FRENCH') {
-      chocolate = 7;
-  }
+} else if (recipe == "FRENCH") {
+  amt = base * FRENCH_FUDGE;
+  chocolate = 7;
+} else if (recipe == "ENGLISH") {
+  amt = base * ENGLISH_FUDGE;
 } else {
-  fudge = 1;
   amt = base;
-  sugar = 2 * bottom(amt) + top(amt) * 1.17;
 }
+sugar = 2 * bottom(amt) + top(amt) * 1.17;
