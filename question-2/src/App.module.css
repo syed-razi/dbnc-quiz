@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dob {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.country {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
