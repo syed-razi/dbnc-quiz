@@ -1,21 +1,81 @@
 .form {
   display: flex;
   flex-direction: column;
+  margin: auto;
+  width: 529px;
+  height: 541px;
+  background-color: #1879db;
+  padding: 25px 30px;
+  font-size: 20px;
+  font-style: italic;
 }
 
 .form > div {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form label {
+  color: white;
+  margin: 0 0 5px;
 }
 
 .dob {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 41%;
 }
 
 .country {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 55%;
 }
+
+input,
+textarea {
+  padding: 12px;
+  font-size: 20px;
+  background: transparent;
+  color: white;
+  border: solid 1px white;
+}
+
+input {
+  margin: 0 0 30px;
+  outline: none;
+}
+
+.dateInput {
+  border: solid 1px white;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 12px 12px 0;
+}
+
+.dateInput input {
+  margin: 0;
+  padding: 0;
+  border: transparent;
+  width: 80%;
+}
+
+.datepicker {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+  color:white;
+}
+
+textarea {
+  height: 100%;
+  resize: none;
+  outline: none;
+}
+
+::placeholder {
+  color:#79A8E6;
+  font-style: italic;
+}
+
