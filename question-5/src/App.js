@@ -12,6 +12,7 @@ function App() {
     );
     const data = await result.json();
     setRhymes(data.map((wData) => wData.word));
+    setWord("")
   };
   return (
     <div>
